@@ -23,13 +23,6 @@ payload_shedule = {"__args": [None, {"year":2025,"datefrom": get_week()[0],"date
 payload_data = {"__args": [None, 2025, {"vt_filter":{"datefrom": get_week()[0],"dateto": get_week()[1]}}, {"op":"fetch","needed_part": {"classrooms":["short"],"subjects":["name"], "teachers":["short", "name"]}}],
                 "__gsh":"00000000"}
 
-headers = {
-    "Content-Type": "application/json",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-}
-
-
 response = requests.post(url_shedule, json=payload_shedule)
 
 shedule = response.json()
