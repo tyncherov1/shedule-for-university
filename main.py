@@ -10,7 +10,6 @@ SCOPES = ['https://www.googleapis.com/auth/calendar'] #for auth to calendar
 CAL_ID = '5ec0d4205d278ba14f659d7e1159672a24f2186a632da4d2c7d49d5c3827d14b@group.calendar.google.com' #id calendar
 
 def get_calendar_service():
-    
     creds = None
     if os.path.exists('token.json'):
         creds = Credentials.from_authorized_user_file('token.json', SCOPES)
