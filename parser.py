@@ -17,7 +17,7 @@ url_shedule = "https://msu2006.edupage.org/timetable/server/currenttt.js?__func=
 url_data = "https://msu2006.edupage.org/rpr/server/maindbi.js?__func=mainDBIAccessor"
 
 
-payload_shedule = {"__args": [None, {"year":2025,"datefrom": get_week()[0],"dateto": get_week()[1],"table":"classes","id":"-273","showColors":False,"showIgroupsInClasses":False,"showOrig":True,"log_module":"CurrentTTView"}],
+payload_shedule = {"__args": [None, {"year":2025,"datefrom": get_week()[0],"dateto": get_week()[1],"table":"classes","id":"-273","showColors":True,"showIgroupsInClasses":False,"showOrig":True,"log_module":"CurrentTTView"}],
                    "__gsh":"00000000"}
 
 payload_data = {"__args": [None, 2025, {"vt_filter":{"datefrom": get_week()[0],"dateto": get_week()[1]}}, {"op":"fetch","needed_part": {"classrooms":["short"],"subjects":["name"], "teachers":["short", "name"]}}],
